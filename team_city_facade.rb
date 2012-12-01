@@ -22,7 +22,6 @@ class TeamCityFacade
   def get_all_projects
     response = get "/projects"
     JSON.parse(response.body)
-    response
   end
   
   def get_latest_tagged_build(build_type_id, tag)
